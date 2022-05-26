@@ -1,0 +1,364 @@
+:root {
+
+    ---primary: #9ab44b;
+    --priamry-alpha: rgba(154, 180, 75, 0.9);
+    --secondary: #1b8e45;
+    --third: #d9f068;
+    --third-alpha: #cae44c;
+    /* #cae44c; */
+
+ 
+
+}
+
+/* BOTON */
+.btn-primary {
+    color: #fff;
+    background-color: var(---primary);
+    border-color: var(---primary);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #1b8e45;
+    border-color: var(---primary);
+    box-shadow: 0 0 0 0.25rem --priamry-alpha;
+}
+
+.btn-check:checked+.btn-primary,
+.btn-check:active+.btn-primary,
+.btn-primary:active,
+.btn-primary.active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: var(---primary);
+    border-color: var(---primary);
+}
+
+.btn-check:checked+.btn-primary:focus,
+.btn-check:active+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem var(--priamry-alpha);
+}
+
+.btn-primary:disabled,
+.btn-primary.disabled {
+    color: #fff;
+    background-color: var(---primary);
+    border-color: var(---primary);
+}
+
+/* DIVIDER    HR */
+hr.divider {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: var(---primary);
+    opacity: 1;
+}
+
+hr.divider-light {
+    background-color: var(--secondary);
+}
+
+/* CARRUSEL */
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption,
+#portfolio .container-md .portfolio-box .portfolio-box-caption,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption,
+#portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: var(--priamry-alpha);
+    transition: opacity 0.25s ease;
+    text-align: center;
+}
+
+/* links  */
+a {
+    color: var(---primary);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+/* nav */
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(---primary);
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--secondary);
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active {
+    color: var(---primary) !important;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link:active {
+    color: var(---primary);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(---primary);
+}
+
+nav ul .nav-link:hover {
+    /* xd */
+    color: var(---primary) !important;
+}
+
+#mainNav.navbar-shrink .navbar-brand:hover {
+    color: var(---primary);
+}
+
+
+/* full sections -(about sections) */
+
+.bg-primary {
+    /* --bs-bg-opacity: 1; */
+    /* background-color: rgba(var(---primary), var(--third)) !important; */
+    background-color: var(---primary) !important;
+
+}
+
+/* ----------------------- ---------------------------------------------------textos */
+@font-face {
+    font-family: "CooperLightBT";
+    src: url("../assets/fonts/CooperLightBT.ttf");
+  }
+
+
+.text-brand {
+    /* logo (a) */
+    font-family: "CooperLightBT" !important;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100px;
+    color: #152921;
+}
+
+.main-text {
+    font-family: "CooperLightBT" !important;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: normal;
+    line-height: 39.6px;   
+}
+
+/* h2 */
+* h2 {
+    font-family: "CooperLightBT" !important;
+    font-size: 38.25px;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: normal;
+    line-height: 42.0833px
+}
+
+* p{
+    font-family: 'Quattrocento Sans', sans-serif !important;
+    font-size: 14.45px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24.5667px;
+}
+
+* a {
+    font-family: 'Quattrocento Sans', sans-serif !important;
+    font-size: 17.629px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 29.9667px
+
+}
+
+* h4 {
+  font-family: "CooperLightBT" !important;
+  font-weight: 250;
+  letter-spacing: normal;
+  line-height: 42.0833px
+}
+
+
+/* -----------------------------------------------Icons te ofrecemos.... */
+#services i:hover{
+  color:  var(---primary);
+}
+
+#contact i:hover{
+  color:  var(---primary);
+}
+
+
+/*------------------------------------------------------------------ form */
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #60c51c;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(40, 190, 65, 0.25);
+  }
+
+  /*------------------------------------------------------------------ footer section*/
+.footer_section {
+    background-color: #222831;
+    color: #ffffff;
+    padding: 75px 0 40px 0;
+    text-align: center;
+  }
+  
+  /* .footer_section h4 {
+    font-size: 28px;
+  } */
+  
+  /* .footer_section h4,
+  .footer_section .footer-logo {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+  } */
+  
+  .footer_section p {
+    color: #dbdbdb;
+  }
+  
+  .footer_section .footer-col {
+    margin-bottom: 30px;
+  }
+  
+  .footer_section .footer_contact .contact_link_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .footer_section .footer_contact .contact_link_box a {
+    margin: 5px 0;
+    color: #ffffff;
+  }
+  
+  .footer_section .footer_contact .contact_link_box a i {
+    margin-right: 5px;
+  }
+  
+  .footer_section .footer_contact .contact_link_box a:hover {
+    color: var(---primary);
+  }
+  
+  .footer_section .footer-logo {
+    display: block;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1;
+    color: #ffffff;
+  }
+  
+  .footer_section .footer_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer_section .footer_social a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #222831;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin: 0 2.5px;
+    font-size: 18px;
+  }
+  
+  .footer_section .footer_social a:hover {
+    color: var(---primary);
+  }
+  
+  .footer_section .footer-info {
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .footer_section .footer-info p {
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .footer_section .footer-info p a {
+    color: inherit;
+  }
+  
+  
+  .whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+.whatsapp:hover {
+   transform: scale(1.2);
+  }
+
+
+  footer a i:hover{
+      transform: scale(1.5) !important;
+  }
+
+.btn:hover{
+    transform: scale(1.2) !important;
+}
