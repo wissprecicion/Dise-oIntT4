@@ -162,6 +162,10 @@ nav ul .nav-link:hover {
 
 }
 
+
+
+
+
 /* ----------------------- ---------------------------------------------------textos */
 @font-face {
     font-family: "CooperLightBT";
@@ -188,7 +192,7 @@ nav ul .nav-link:hover {
 }
 
 /* h2 */
-* h2 {
+* h2, h6 {
     font-family: "CooperLightBT" !important;
     font-size: 38.25px;
     font-style: normal;
@@ -370,7 +374,7 @@ nav ul .nav-link:hover {
   }
 
 .btn:hover{
-    transform: scale(1.2) !important;
+   /*  transform: scale(1.2) !important; */
 }
 
 
@@ -400,3 +404,6 @@ nav ul .nav-link:hover {
       height: 75%;
     }
   }
+
+
+
