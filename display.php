@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>Inventario</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
@@ -54,7 +54,9 @@
                        
                         <td>
                         <a href="eliminar.php?deleteid=<?php echo $id ?>"
-                         class="btn btn-outline-danger">Eliminar</a>
+                         class="btn btn-outline-danger"
+                         onclick="return confirmation()">
+                         Eliminar</a>
                          
                         <a href="actualizar.php?updateid=<?php echo $id ?>"
                          class="btn  btn-outline-dark">Actualizar</a>
@@ -80,6 +82,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
-</body>
 
+<script >
+  function confirmation(){
+    if (confirm("¿Realmente desea eliminar el registro?")) {
+      return true;
+    }
+    return false;
+  }
+
+</script>
+</body>
 </html>

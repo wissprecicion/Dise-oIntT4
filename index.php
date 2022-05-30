@@ -94,17 +94,23 @@
             <div class="img-login mx-auto">
               <img class="mb-4 img-fluid " src="assets/img/logo.png" alt="" width="120">
             </div>
-
             <h1 class="h3 mb-3 font-weight-normal">Por favor, introduce las credenciales</h1>
-            <label for="inputEmail" class="sr-only">Usuario</label>
-            <input type="email" id="inputEmail" class="form-control m-3 mx-auto" placeholder="Usuario" required=""
+            <!-- user -->
+            <label for="inputEmail"  class="sr-only">Usuario</label>
+            <input type="text" id="inputEmail" class="form-control m-3 mx-auto" placeholder="Usuario" required=""
               autofocus="">
-            <label for="inputPassword" class="sr-only">Contraseña</label>
+            <!-- password -->
+            <label for="inputPassword"  class="sr-only">Contraseña</label>
             <input type="password" id="inputPassword" class="form-control m-3 mx-auto" placeholder="Contraseña"
               required="">
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit"> Ir </button>
-            <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+            <!-- <button class="btn btn-lg btn-primary btn-block" type="submit" onClick="return validar()">
+              Ir </button> --><!-- doesnt working -->
+              <input type="button" class="btn btn-lg btn-primary btn-block" value="Ir"
+              onClick="return validar()">
+
+
+            <p class="mt-5 mb-3 text-muted">© 2019-2022</p>
           </form>
 
         </div>
@@ -631,35 +637,36 @@
 
 
   <!-- meet the team -->
-<!-- Testimonials-->
-<section class="testimonials text-center bg-light">
-  <div class="container">
+  <!-- Testimonials-->
+  <section class="testimonials text-center bg-light">
+    <div class="container">
       <h2 class="mb-5">What people are saying...</h2>
       <div class="row">
-          <div class="col-lg-4">
-              <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                  <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." />
-                  <h5>Margaret E.</h5>
-                  <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
-              </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." />
+            <h5>Margaret E.</h5>
+            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
           </div>
-          <div class="col-lg-4">
-              <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                  <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." />
-                  <h5>Fred S.</h5>
-                  <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
-              </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." />
+            <h5>Fred S.</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice
+              landing pages."</p>
           </div>
-          <div class="col-lg-4">
-              <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                  <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." />
-                  <h5>Sarah W.</h5>
-                  <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
-              </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." />
+            <h5>Sarah W.</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
           </div>
+        </div>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
 
 
@@ -742,7 +749,8 @@
   <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
   <!-- fonts -->
   <script src="https://kit.fontawesome.com/0c7e5557d4.js" crossorigin="anonymous"></script>
-
+  <!-- login -->
+  <script src="js/validar_login.js"></script>
 </body>
 
 </html>
