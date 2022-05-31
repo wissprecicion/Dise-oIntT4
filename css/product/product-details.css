@@ -58,7 +58,7 @@
 }
 
 .main-content-wrapper .single-product-area .breadcrumb .breadcrumb-item a:hover {
-   color: #fbb710;
+   color: var(---primary);
 }
 
 .main-content-wrapper .single-product-area .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
@@ -128,7 +128,7 @@
 }
 
 .main-content-wrapper .single-product-area .single_product_thumb .carousel-indicators li.active {
-   border: 2px solid #fbb710;
+   border: 2px solid var(---primary);
 }
 
 .main-content-wrapper .single-product-area .single_product_thumb .carousel-item a {
@@ -143,7 +143,7 @@
 .main-content-wrapper .single-product-area .single_product_desc .product-meta-data .line {
    width: 80px;
    height: 3px;
-   background-color: #fbb710;
+   background-color: var(---primary);
    margin-bottom: 15px;
    display: block;
 }
@@ -151,7 +151,7 @@
 .main-content-wrapper .single-product-area .single_product_desc .product-meta-data .product-price {
    font-size: 24px;
    font-weight: 400;
-   color: #fbb710;
+   color: var(---primary);
    line-height: 1;
    margin-bottom: 10px;
 }
@@ -173,7 +173,7 @@
 
 .main-content-wrapper .single-product-area .single_product_desc .product-meta-data .ratings-review .ratings i {
    font-size: 10px;
-   color: #fbb710;
+   color: var(---primary);
 }
 
 .main-content-wrapper .single-product-area .single_product_desc .product-meta-data .ratings-review .review a {
@@ -379,3 +379,65 @@ line-height: 80px;
        /* carrousel outline */
        .main-content-wrapper .single-product-area .single_product_thumb .carousel-indicators li.active {
          border: 2px solid var(---primary); }
+
+
+
+         @font-face {
+            font-family: "CooperLightBT";
+            src: url("../assets/fonts/CooperLightBT.ttf");
+          }
+        
+        
+        .text-brand {
+            /* logo (a) */
+            font-family: "CooperLightBT" !important;
+            font-size: 18px;
+            letter-spacing: 2px;
+            font-weight: 100px;
+            color: #152921;
+        }
+        
+        .main-text {
+            font-family: "CooperLightBT" !important;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 200;
+            letter-spacing: normal;
+            line-height: 39.6px;   
+        }
+        
+        /* h2 */
+        * h2, h6 {
+            font-family: "CooperLightBT" !important;
+            font-size: 38.25px;
+            font-style: normal;
+            font-weight: 200;
+            letter-spacing: normal;
+            line-height: 42.0833px
+        }
+        
+        * p{
+            font-family: 'Quattrocento Sans', sans-serif !important;
+            font-size: 14.45px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 24.5667px;
+        }
+        
+        * a {
+            font-family: 'Quattrocento Sans', sans-serif !important;
+            font-size: 17.629px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 29.9667px
+        
+        }
+        
+        * h4 {
+          font-family: "CooperLightBT" !important;
+          font-weight: 250;
+          letter-spacing: normal;
+          line-height: 42.0833px
+        }
